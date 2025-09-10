@@ -1,0 +1,68 @@
+
+# python学习
+#用于实现登录操作的
+import openpyxl
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
+dirver=webdriver.Chrome()#在类的外面创建，是为了不让他随着类的消失而消失，生命周期会长一点
+class TrainSpider(object):
+
+    login_url="https://kyfw.12306.cn/otn/resources/login.html"
+    profile_url='https://kyfw.12306.cn/otn/view/index.html'
+    left_ticket_url='https://kyfw.12306.cn/otn/leftTicket/init?linktypeid=dc'
+    #重写init方法，
+    def __init__(self,from_station,to_station,train_date):
+        self.from_station=from_station
+        self.to_station=to_station
+        self.train_date=train_date
+        self.station_code=self.init_station_code()#重写init方法，就是把这个类的这个属性赋给了类里面所有的方法
+    def login(self):
+        dirver.get(self.login_url)
+        WebDriverWait(dirver,1000).until(
+            ec.url_to_be(self.profile_url)#当登录的网址从扫码登录到个人中心的网址
+        )
+        print("登录成功")
+    def run(self):  #负责调运其他代码，也就是一种组织代码的方法
+        self.login()
+        self.search_ticket()
+    def search_ticket(self):
+        dirver.get(self.left_ticket_url)
+        #找到那个出发站和到达站隐藏的标签
+        from_station_input=dirver.find_element_by_id('fromStation')
+        to_station_input=dirver.find_element_by_id('toStation')
+        train_date_input=dirver.find_element_by_id('train_date')
+        #根据键来获取值
+        from_station_code=self.station_code[self.from_station]#这是字典的根据键来获取值，根据出发地找到出发地的代号
+        to_station_code=self.station_code[self.to_station]#根据目的地找到目的地所对应的代号
+        '''
+        当我们把我们所需呀的东西都找到的时候，如何去把这些东西都添加到那个隐藏的标签里面，此时我们需要使用js代码
+        '''
+        dirver.execute_script('arguments[0].value="%s"'%from_station_code,from_station_input)#也就是把车站对应的代号放到真正的这个标签里面去
+        dirver.execute_script('arguments[0].value="%s"'%to_station_code,to_station_input)
+        dirver.execute_script('arguments[0].value="%s"'%self.train_date,train_date_input)#以上也是如此，是一个一一对应的过程
+
+        #开始单击查询操作
+        search_tag=dirver.find_element_by_id('query_ticket')
+        search_tag.click()
+
+    def init_station_code(self):
+        wb=openpyxl.load_workbook('station.xlsx')
+        ws=wb.active
+        lst=[]
+        for row in ws.rows:
+            sub_lst=[]
+            for cell in row:
+                sub_lst.append(cell.value)#先爬每一行，再爬行里面的每一列
+            lst.append(sub_lst)
+        #print(dict(lst))#
+        return dict(lst)
+
+def start():#这是一个类之外的函数，作用就是启动爬虫程序
+    spider=TrainSpider("长春","北京","2022-2-25")#创建对象，开始启动
+    spider.run()
+    spider.init_station_code()
+
+if __name__ == '__main__':
+    start()
+

@@ -1,0 +1,737 @@
+E:\python\python36\python.exe E:/python/test/spiderpro/scrapy项目/liepin/job/start.py
+2022-04-09 17:03:10 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: job)
+2022-04-09 17:03:10 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Windows-10-10.0.18362-SP0
+2022-04-09 17:03:10 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-04-09 17:03:10 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'job',
+ 'NEWSPIDER_MODULE': 'job.spiders',
+ 'SPIDER_MODULES': ['job.spiders']}
+2022-04-09 17:03:10 [scrapy.extensions.telnet] INFO: Telnet Password: cff817966677b356
+2022-04-09 17:03:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-04-09 17:03:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-04-09 17:03:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-04-09 17:03:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['job.pipelines.JobPipeline']
+2022-04-09 17:03:10 [scrapy.core.engine] INFO: Spider opened
+2022-04-09 17:03:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-04-09 17:03:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/zhaopin/?key=python> (referer: None)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948362349.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=0&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=0> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1947195275.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=32&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=32> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948739989.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=36&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=36> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948610783.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=29&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=29> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948124643.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=37&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=37> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '狮王日用化工(青岛)有限公司',
+ 'job_desc': '职责描述：\n'
+             '1、\t'
+             '负责采用互联网大数据方法，梳理、治理内外部数据源，对数据进行挖掘、建模和深度分析（含市场分析数据，运营数据，售后数据，策略数据等）； \n'
+             '2、\t负责外部相关业务数据的采集，提供销售运营策略数据支持；\n'
+             '3、\t负责平台各项数据的整合，监控和反馈跟踪，对数据进行分析和及时预警；\n'
+             '4、\t负责企业内部web应用的需求采集与项目开发、运维；\n'
+             '5、\t负责企业内部自研RPA的开发与运维；\n'
+             '任职要求：\n'
+             '1.\t本科以上学历，计算机科学、信息系统、数据科学、应用数学等相关专业；\n'
+             '2.\t'
+             '具备3年及以上行业数据统计、数据分析、爬网等相关工作经验，能理解业务逻辑，并从数据层次建模、分析、建立企业管理或生产销售的数字模型；\n'
+             '3.\t具备有效解决公司重复性工作的能力，熟练使用TagUI、RPA for Python、Robocorp、Robot '
+             'Framework等一种或多种开源RPA；\n'
+             '4.\t'
+             '对多种类型的计算机(PC、ARM等)、操作系统(Windows、Linux等)、数据存储系统(Oracle、Mysql、Sql '
+             'Server等)、数据挖掘分析及机器学习算法（分类、聚类、回归、神经元网络、深度学习等）有深入的认识和实操经验；\n'
+             '5.\t'
+             '精通异步网络编程、多线程编程、HTTP协议，至少熟悉Python主流框架Django、Tornado、Flask、webpy中的一种，能快速的构建企业级web应用；\n'
+             '6.\t有责任心，学习能力强，工作积极主动，思路清晰，擅长沟通；具备积极解决各种难题的能力，能承受较大的工作压力；\n'
+             '7.\t有java语言使用经验的优先；',
+ 'job_properties': ['上海-徐汇区', '3-5年', '统招本科'],
+ 'name': 'Python/Java开发与数据分析师招聘'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1946288001.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=33&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=33> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948034551.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=38&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=38> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1930337509.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=34&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=34> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1947997515.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=39&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=39> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '上海孝庸资产管理有限公司',
+ 'job_desc': '岗位职责:\r\n'
+             '1. 数据库搭建、开发、优化、备份及日常维护，根据业务需求设计库表；\r\n'
+             '2. 数据库的查询开发、查询优化、存储过程开发、数据预处理等工作；\r\n'
+             '3. 运用python进行web后端开发、数据处理以及分析统计等工作；\r\n'
+             '4. 完成部门安排的其他技术工作。\r\n'
+             '\r\n'
+             '任职要求：\r\n'
+             '1. 计算机相关专业本科及以上，具备2年以上python开发经验，2年以上mysql数据库相关工作经验；\r\n'
+             '2. '
+             '精通MySQL数据库体系结构和工作原理，并且有数据库管理、运维、配置、备份、迁移等实操经验，熟悉大量数据存储、查询优化方法、索引使用、SQL调优技术、存储过程等；\r\n'
+             '3. 精通python，熟悉flask框架，熟练使用各类python数据分析包，精通python与mysql数据交互；\r\n'
+             '4. 熟悉Linux安装，能在Linux环境下工作；\r\n'
+             '5. 工作踏实，勤奋刻苦，愿意学习，具备优秀的团队合作意识。\r\n'
+             '\r\n'
+             '薪酬福利：\r\n'
+             '1.薪资体系：底薪+绩效+年终奖金；\r\n'
+             '2.福利设置：午餐补贴，生日、节日礼金礼卡，电影、聚餐，公司不同办公场地设有零食、饮料多样的茶水间；\r\n'
+             '3.旅游活动：公司每年组织项目、形式多样化的旅游活动；\r\n'
+             '4.俱乐部：公司设有“骁·Young俱乐部”，定期组织不同类型的团建、体育赛事等活动。',
+ 'job_properties': ['上海', '1-3年', '本科'],
+ 'name': 'Python及数据库开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '上海凯诘电子商务股份有限公司',
+ 'job_desc': '岗位职责\n'
+             '\n'
+             '1、负责公司的爬虫业务，承担日常数据抓取解析入库；\n'
+             '2、积极与部门间沟通，负责数据分析业务；\n'
+             '3、内部数据中台数据治理等工作。\n'
+             '\n'
+             '任职要求：\n'
+             '\n'
+             '1、2年左右使用 Python 爬虫技术栈，对指定网站进行爬取的经验；\n'
+             '2、熟练运用 Python 语言及常用模块，熟悉 python 中多线程、多进程及网络开发等模块；\n'
+             '3、熟悉 Python 下 Mysql、Mongodb 数据库的操作；\n'
+             '4、计算机基础知识扎实，IO 以及内存的操作；了解计算机网络，理解 http 等网络协议；\n'
+             '5、具有规范的编程习惯与文档编写能力，良好的沟通协调能力和团队合作意识，能够主动总结和分享自己的开发经验。',
+ 'job_properties': ['上海-徐汇区', '1-3年', '大专'],
+ 'name': 'python工程师 (MJ000132)'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '慧博云通科技股份有限公司',
+ 'job_desc': '需要3个python岗位，一个属于全栈，一个需要会pyspark，一个需要愿意rpa开发，都是需要会英语良好，粤语优先。\n'
+             '\n'
+             '1.至少3-5年任何编程语言的开发经验\n'
+             '2.至少掌握一种编程语言，Python（perfer）、Java、C#、NodeJS等。\n'
+             '3.对OO设计和编程有良好的理解。\n'
+             '5.熟悉以下技术：JavaScript、HTML、CSS、XML/XPath、Web服务（SOAP）、RESTful、VBA、Windows命令行、批处理（.bat）脚本。\n'
+             '6.数据库、SQL/NOSQL知识。熟悉以下任何数据库/缓存平台，如SQL Server、MongoDB、Redis、，\n'
+             '7.有web应用前端开发经验，熟悉VUE、AngularJS、Angular2、React等前端框架的开发。\n'
+             '8.熟悉DevOps工具，如GIT、GitHub、Bitbucket、Jira、Confluence、SVN、Jenkins、SonarQube、Nexus等。。\n'
+             '\n'
+             '职位：Python/PySpark高级开发人员\n'
+             '5年以上软件开发行业工作经验；\n'
+             '3年Python项目开发经验。--＞强制性的\n'
+             '在PySpark方面有丰富的经验。--＞强制性的\n'
+             '具有较强的SQL编程和调优等能力--＞必选\n'
+             '有Azure DataBrick或Azure Data Factory相关知识和经验者优先。\n'
+             '擅长数据分析和技术问题调查与解决。\n'
+             '粤语流利者优先，英语读写良好；\n'
+             '\n'
+             '如果有Python经验较好，愿意做RPA开发的也可以酌情推荐\n'
+             '\n'
+             '1.至少5年编程语言开发经验\n'
+             '2.熟悉以下技术：JavaScript、HTML、CSS、XML/XPath、Web服务（SOAP）、RESTful、VBA、Windows命令行、批处理（.bat）脚本。\n'
+             '3.有网络应用前端开发经验者优先考虑。\n'
+             '4.至少掌握一种编程语言，如C#、Java、VB、Python等。\n'
+             '5.对OO设计和编程有良好的理解。\n'
+             '6.必须具备任何地方的自动化/UiPath/Blue Prism/NICE经验。\n'
+             '7.能用粤语与用户交流是一个额外的优势。\n'
+             '8.数据库、SQL的知识\n'
+             '9.熟悉软件开发过程和方法\n'
+             '10.敏捷开发方法的知识',
+ 'job_properties': ['广州-越秀区', '3-5年', '本科'],
+ 'name': 'python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948762963.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=27&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=27> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1945030449.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=21&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=21> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '遨博(江苏)机器人有限公司',
+ 'job_desc': '职责描述：\r\n'
+             '1.负责示教器软件 python 插件框架搭建\r\n'
+             '2.python 插件技术支持\r\n'
+             '3. 基于 python 的插件开发\r\n'
+             '4.应用笔记撰写\r\n'
+             '5. 技术支持论坛回复\r\n'
+             '6.用户培训\r\n'
+             '任职要求：\r\n'
+             '1.计算机专业优先，熟练掌握python语言，有项目开发经验\r\n'
+             '2.熟悉linux操作系统，并具备Linux环境开发经验，熟练使用git；\r\n'
+             '3.能快速编写与对接api，熟悉多线程/进程与进程间通信\r\n'
+             '4.良好的沟通能力和独立思考问题的能力；\r\n'
+             '5.热爱工业机器人行业，有相关从业经验者优先',
+ 'job_properties': ['北京-海淀区', '1-3年', '本科'],
+ 'name': '软件工程师（Python方向）'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948758399.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=28&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=28> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '华大集团',
+ 'job_desc': '工作职责:\r\n'
+             '1. 配合算法同事封装算法接口、配合前端同事联调\r\n'
+             '2. 负责python工程开发\r\n'
+             '任职资格:\r\n'
+             '1. Python开发经验3年及以上\r\n'
+             '2. 具备扎实的计算机和数据结构基础\r\n'
+             '3. 精通至少一种Python后端框架：Django、Flask等；\r\n'
+             '4. 精通MySQL、Redis、MongoDB数据库使用；\r\n'
+             '5. 精通git、linux常用操作；\r\n'
+             '6. 精通Python高并发、异步编程，精通celery框架；\r\n'
+             '7. 熟悉docker部署、Nginx负载均衡配置；\r\n'
+             '8. 熟悉Python性能优化；\r\n'
+             '9. 良好的沟通协作能力和较强的自我驱动力。',
+ 'job_properties': ['深圳', '3-5年', '本科'],
+ 'name': '资深python后端/开发工程师(J18661)'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1945817291.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=19&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=19> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1947480489.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=16&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=16> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1947262653.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=17&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=17> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1945538349.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=20&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=20> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '柏美迪康',
+ 'job_desc': '职位诱惑：技术大牛带教  技术成长快\r\n'
+             '\r\n'
+             '职位描述：Python开发工程师 \r\n'
+             '\r\n'
+             '岗位职责：\r\n'
+             '\r\n'
+             '1、设计和开发扩展性良好的Python应用，进行算法模型部署和产品开发； \r\n'
+             '\r\n'
+             '2、调试和维护部门开发的Python应用，处理用户的反馈问题；\r\n'
+             '\r\n'
+             '3、相关技术说明和过程文档的撰写和归纳整理。 \r\n'
+             '\r\n'
+             '岗位要求： \r\n'
+             '\r\n'
+             '1、熟练掌握Python编程语言，3年及以上解决实际问题的代码编写经验，熟悉编码规范，具备良好的文档编写能力； \r\n'
+             '\r\n'
+             '2、熟练掌握Flask、Django等Web框架，具有实际的项目经验； \r\n'
+             '\r\n'
+             '3、熟悉SQL语法，熟练掌握PostgreSQL/MySQL/Oracle/MongoDb等任一数据库； \r\n'
+             '\r\n'
+             '4、熟悉云服务开发，熟悉RabbitMQ/Kafka/Redis等常用组件； \r\n'
+             '\r\n'
+             '5、熟悉Hadoop/Hbase/Spark的使用，有项目经验的优先； \r\n'
+             '\r\n'
+             '6、熟悉React/Angular等框架的优先；\r\n'
+             '\r\n'
+             '7、有Devops开发经验的优先。',
+ 'job_properties': ['成都-高新区', '1-3年', '本科'],
+ 'name': 'python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1946530391.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=18&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=18> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '荷瑞会展',
+ 'job_desc': '岗位职责：\r\n'
+             '1、负责大规模信息文本、图像等数据的抓取、结构化信息的提取与识别；\r\n'
+             '2、负责公司Python相关系统功能设计与开发；\r\n'
+             '3、负责Python相关数据库架构设计；\r\n'
+             '4、研究各种第三方服务API，和公司业务系统对接；\r\n'
+             '5、研发和维护业务逻辑组件，对前端提供稳定高性能的API。\r\n'
+             '岗位要求：\r\n'
+             '1、一年左右实战项目中Python开发的经验；\r\n'
+             '2、参与指标计算开发工作，能熟练运用Python解决业务需求，了解Python性能调优；\r\n'
+             '3、熟练运用SQL，熟悉主流数据库之一：Oracle、MSSQLSever、PostgreSQL、MySQL等主流关系型数据库，具备一定的SQL调优能力；\r\n'
+             '4、熟悉Mongodb等NoSQL数据库，有大数据开发经验；\r\n'
+             '5、使用过Django，能使用Django搭建后台服务，数据分析，分析算法；\r\n'
+             '6、具有良好学习能力、分析能力和独立解决问题的能力；\r\n'
+             '7、熟悉数据挖掘算法以及具备模型部署经验优先。',
+ 'job_properties': ['上海', '1-3年', '大专'],
+ 'name': 'Python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '深圳拾一管理咨询有限公司',
+ 'job_desc': '工作职责\n'
+             '1.参与中台, 交易运营, '
+             '对账服务架构搭建和设计；与全公司内各部门技术团队配合以及产品、前端开发、对接，完成中台需求开发；\xa0\n'
+             '2.主导风控平台python服务端的开发，负责中台部门数据对接及数据平台开发工作；\xa0\n'
+             '3.负责开发并维护中台部门应用系统后端服务及数据应用平台，保证python技术栈后端服务的总体可用性和性能；\xa0\n'
+             '4.能针对有性能问题，代码bug服务做调优、修复和重构；\xa0\n'
+             '5.负责编写相关技术文档和需求设计文档；为部门乃至公司做一定的技术积累；并有流畅的英文沟通, 读写能力。\xa0\n'
+             '任职资格\n'
+             '1. 计算机或相关专业统招本科及以上学历，具有3-5年以上python开发经验；\xa0\n'
+             '2. 扎实的编程功底，有一定的数据结构和算法基础为佳；\xa0\n'
+             '3. 熟悉linux开发环境；\xa0\n'
+             '4. 熟练掌握至少一门python web服务框架，如：Django、Fastapi、Flask等；\xa0\n'
+             '5. 对微服务架构有一定了解，熟悉常用中间件，如：kafka，zk等微服务中间件；\xa0\n'
+             '6. 熟悉面向对象理论及相关设计模式；\xa0\n'
+             '7. 熟练使用关系型数据库和Nosql，如：postgresql，mysql，oracle，redis、mongo等；\xa0\n'
+             '8. '
+             '对敏捷研发流程和devops有一定了解和实践，使用过诸如：teambition、jira、tpad、Jenkins等工具；\xa0\n'
+             '9. 出色的沟通表达和协作能力，良好的自驱力和责任心，对技术赋能有热情；',
+ 'job_properties': ['深圳-南山区', '3-5年', '本科'],
+ 'name': 'python开发'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '太初(无锡)电子科技有限公司',
+ 'job_desc': '岗位职责：\n'
+             '1、负责和承担AI计算系统Python模块的架构设计、调优和工程实现；\n'
+             '2、负责相关系统的产品化建设。\n'
+             '\n'
+             '任职资格：\n'
+             '1.熟练使用Python，对语言特性有较为深入的了解，有丰富的Python开发经验（2年以上实际项目经验），熟悉Linux/Unix开发环境，能熟练使用pdb等相关调试工具；\n'
+             '2.具有复杂Python项目的管理和开发能力；\n'
+             '3.熟悉Python项目的包管理、安装、分发机制，具有项目产品化能力；\n'
+             '4.掌握主流深度学习框架Python前端的编程方法；\n'
+             '5.了解人工智能、深度学习的基本原理和主流AI模型；\n'
+             '\n'
+             '加分项：\n'
+             '•有深度学习框架等相关计算框架Python前端开发经验者优先；\n'
+             '•熟悉pybind/swig/cython或有丰富的使用经验者优先；\n'
+             '•具有使用Python前端的跨语言项目开发经验者优先。',
+ 'job_properties': ['北京-海淀区', '1-3年', '统招本科'],
+ 'name': '高级Python开发工程师 (MJ000070)'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '苏州易来科得科技有限公司',
+ 'job_desc': '【岗位职责】\r\n'
+             '1、负责公司自有产品平台的开发及测试维护工作\r\n'
+             '2、负责落地产品新功能新需求，持续加强和优化页面性能及用户体验\r\n'
+             '3、根据开发计划，设计软件模块，完成软件模块源代码编写，实现开发需求规定的功能；\r\n'
+             '4、根据开发需求，完成开发文档，提出模块设计的规划；\r\n'
+             '5、负责与产品经理、工程师团队紧密协作推动产品成果落地\r\n'
+             '【岗位要求】\r\n'
+             '1、两年以上稳定开发经验，熟悉python语言开发\r\n'
+             '2、熟悉Linux操作，能够使用git进行版本控制管理；\r\n'
+             '3、熟悉djangoflask任一python开发框架，懂代码调试并能持续优化；\r\n'
+             '4、熟悉HTTP协议，能开发符合RESTFUL设计思想的接口；\r\n'
+             '5、有mysql、mongodb、redis等常用数据库的使用经验；\r\n'
+             '6、优良的代码注释习惯，并能编写有条理的开发文档',
+ 'job_properties': ['苏州', '经验不限', '本科'],
+ 'name': 'python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '南京上古网络科技有限公司',
+ 'job_desc': '职责描述：\n'
+             '\n'
+             'Python中高级开发工程师(Odoo框架)\n'
+             '岗位职责：\n'
+             '1，负责基于Odoo（OpenERP）开源ERP框架二次开发；\n'
+             '2，熟悉Python/Odoo开源框架，有定制化模块开发经验优先考虑；\n'
+             '3，有良好的代码编写习惯，具有良好的沟通、协作能力，有责任心。\n'
+             '\n'
+             '岗位要求：\n'
+             '1、2-3年以上Python开发经验，精通Python编程，掌握Python的高效写法；\n'
+             '2、熟悉Odoo框架，了解Odoo使用的基本Python库，能熟练的对Odoo (OpenERP)进行二次开发的优先考虑；\n'
+             '3、熟悉JavaScript，熟悉Linux操作系统，熟悉使用git等代码管理工具；\n'
+             '4、熟悉PostgreSQL数据库，能熟练编写sql语句；\n'
+             '5、有HTML 5, CSS 3前端开发经验者优先；\n'
+             '6、有钻研问题并解决问题的兴趣和毅力，有团队合作精神、责任心、能接受建议，具备良好的表达和沟通能力。有较强的自学能力和技术攻关能力；\n'
+             '7、有一定的英文水平者优先考虑。\n'
+             '\n'
+             '\n'
+             '任职要求：',
+ 'job_properties': ['南京-鼓楼区', '1-3年', '本科'],
+ 'name': 'python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1940759741.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=10&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=10> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '南京莱斯网信技术研究院有限公司',
+ 'job_desc': '岗位职责：\r\n'
+             '1、负责项目业务领域的数据分析，数据挖掘、算法设计等领域的研究和开发工作；\r\n'
+             '2、参与架构、设计、研发公司的数据分析系统；\r\n'
+             '3、从系统和数据中发掘异常行为；\r\n'
+             '4、优化系统框架，实现业务逻辑；\r\n'
+             '5、linux下用python进行海量数据预处理与分析；\r\n'
+             '6、自研基于业务的算法模型应用与研究；\r\n'
+             '岗位要求：\r\n'
+             '1，计算机及电子、数学相关专业本科以上学历；\r\n'
+             '2，1年以上数据挖掘、用户画像、大规模数据分析相关经验；\r\n'
+             '3，熟练掌握Python编程语言（装饰器、迭代器、multi-process、IPC、文件IO等），编码符合PEP8编码规范；使用过Django、tornado、Flask任意一种框架；对Web '
+             '服务开发并发并行编程，数据库系统有较深入的理解;\r\n'
+             '4，掌握linux基本操作，有linux环境的研发经验；\r\n'
+             '5、熟练掌握Mysql、Oracle等数据库操作方法；\r\n'
+             '6、有较强的数理统计和挖掘算法功底，有较强的逻辑思维能力，对数据结构和算法有比较好的理解和实践;\r\n'
+             '7、有教育行业数据挖掘分析经验者优先。',
+ 'job_properties': ['南京-秦淮区', '1-3年', '统招本科'],
+ 'name': '数据挖掘分析师（python方向）'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': 'JoinQuant',
+ 'job_desc': '岗位职责:\r\n'
+             '负责公司策略需要的组件和工具的开发和维护\r\n'
+             '开发研究员需要的各种工具\r\n'
+             '\r\n'
+             '任职要求:\r\n'
+             '一本以上学历, 计算机/数学/金融工程等相关专业\r\n'
+             '数学基础好, 有一定的统计分析能力\r\n'
+             '熟练的Python开发能力\r\n'
+             '熟练使用numpy/pandas等常见的数据分析包\r\n'
+             '理解常见机器学习方法, 掌握相关python包的使用\r\n'
+             '学习能力强, 能够快速实现研究员提出的需求.',
+ 'job_properties': ['北京-朝阳区', '1-3年', '本科'],
+ 'name': '量化实现工程师(Python)'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1947780591.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=2&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=2> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1944540197.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=9&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=9> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948608681.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=1&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=1> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '广东椰泰生物科技有限公司',
+ 'job_desc': '岗位职责：\r\n'
+             '\r\n'
+             '1、 根据产品需求独立开发，进行相关的设计、开发、调试、测试、会调用接口等；\r\n'
+             '\r\n'
+             '2、 根据开发过程中的体验对产品提出建议，积极参与产品、功能与技术的改进；\r\n'
+             '\r\n'
+             '3、 参与公司需求调研，并且搭建无代码系统。\r\n'
+             '\r\n'
+             '岗位要求：\r\n'
+             '\r\n'
+             '1、 计算机相关专业，至少1年以上Python开发经验；\r\n'
+             '\r\n'
+             '2、 熟练Python编程语言，能使用Django、flask框架进行独立开发；\r\n'
+             '\r\n'
+             '3、 熟悉MySQL、SqlServer数据库；\r\n'
+             '\r\n'
+             '4、 熟练Linux系统的一些基本操作，使用shell编写脚本；',
+ 'job_properties': ['惠州-博罗县', '1-3年', '大专'],
+ 'name': 'Python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.scraper] ERROR: Error processing {'company': '深信服科技',
+ 'job_desc': '岗位职责：\r\n'
+             '1、负责安全类平台型产品的技术研究、模块设计与开发\r\n'
+             '2、负责并发、性能、稳定性等问题分析和解决\r\n'
+             '3、参与业务模块架构设计与演进\r\n'
+             '4、参与技术把关、评审、方案选型等工作\r\n'
+             '岗位要求\r\n'
+             '1、本科及以上学历，2年以上开发经验，熟悉Linux后台Python编程\r\n'
+             '2、熟悉MySQL/PostgreSQL/Redis/Elasticsearch等至少一种数据库\r\n'
+             '3、熟悉至少一种Python框架：Django、Flask、Tornado、Bottle、Web2py等\r\n'
+             '4、熟悉C/C++、Go中一门语言优先\r\n'
+             '5、具备一定规模的模块设计能力优先\r\n'
+             '6、有性能优化经验、复杂问题解决经验者优先\r\n'
+             '7、对于经验更丰富、能力更强、有相关领域研发经验者，将会以高级别招聘入职',
+ 'job_properties': ['深圳', '3-5年', '本科'],
+ 'name': 'Python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.liepin.com/job/1948773547.shtml?d_sfrom=search_prime&d_ckId=0fcb61c73532e082aab98b83e27105aa&d_curPage=0&d_pageSize=40&d_headId=0fcb61c73532e082aab98b83e27105aa&d_posi=15&skId=e583b182dd4c485b0791e18aa0d472e2&fkId=e583b182dd4c485b0791e18aa0d472e2&ckId=e583b182dd4c485b0791e18aa0d472e2&sfrom=search_job_pc&curPage=0&pageSize=40&index=15> (referer: https://www.liepin.com/zhaopin/?key=python)
+2022-04-09 17:03:12 [scrapy.core.scraper] ERROR: Error processing {'company': '声智科技',
+ 'job_desc': '岗位职责：\r\n'
+             '1、负责自动化运维平台的开发；\r\n'
+             '2、开发基于 k8s 的 CI/CD 系统，资产管理系统等；\r\n'
+             '3、研究 DevOps 新技术和方向，持续提高运维交付效率和质量。\r\n'
+             ' 任职要求：\r\n'
+             '1、全日制本科以上学历，计算机及相关专业毕业；\r\n'
+             '2、三年以上 Python 开发经验，熟悉 Python Web 开发，熟悉 flask 或 django 框架(必备\r\n'
+             '项）；\r\n'
+             '3、熟悉常用中间件和数据库的使用(mysql,redis,mongodb,kafka,etcd,zookeeper,各种 '
+             'MQ)；\r\n'
+             '4、熟悉 docker/kubernetes 生态，熟悉 k8s 的 API 接口；\r\n'
+             '5、具备良好的网络知识，熟练使用 Linux 系统，熟悉常用基础命令；\r\n'
+             '6、具备良好的编程思想、编码风格、良好的文档能力，具备优秀的分析问题和解决\r\n'
+             '问题的能力。',
+ 'job_properties': ['北京-海淀区', '3-5年', '统招本科'],
+ 'name': 'python'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:12 [scrapy.core.scraper] ERROR: Error processing {'company': 'JoinQuant',
+ 'job_desc': '岗位职责\r\n'
+             '（1）负责公司运营产品的全栈开发，包括 Web 前端、后端、数据库的设计与实现；\r\n'
+             '（2）独立维护一个或者多个关键模块的代码，承担模块内代码编写、端到端验证、集成调测等；\r\n'
+             '（3）开发对团队效能提升有价值的产品、工具和技术；\r\n'
+             '（4）欢迎你自己定义更多的工作方式与内容。\r\n'
+             '\r\n'
+             '岗位要求\r\n'
+             '（1）全日制大学本科及以上学历，计算机、软件工程、信息等相关专业；\r\n'
+             '（2）扎实的基本功，熟练掌握 Python，熟练使用python进行各种工具开发；\r\n'
+             '（2）熟练掌握 Django或者其他Python Web 开发框架 ;\r\n'
+             '（3）熟练掌握 MySQL、MongoDB、Redis等中间件的使用;\r\n'
+             '（4）具备良好的分析问题、解决问题的能力，喜欢尝试新技术，乐于分享，优秀的团队协作精神;\r\n'
+             '（5）加分项：熟悉数据分析、可视化及金融方面有工作经验。',
+ 'job_properties': ['西安', '1-3年', '本科'],
+ 'name': 'Python开发工程师(西安)'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:12 [scrapy.core.scraper] ERROR: Error processing {'company': '云图软件',
+ 'job_desc': '职责描述：\r\n'
+             '1.理解计算机图形学等相关的设计流程和数据流程；\r\n'
+             '2.基于公司现有的图形引擎，使用Python软件进行前端功能开发；\r\n'
+             '3.参与产品功能讨论和开发实现思路。\r\n'
+             '4.编写软件功能说明文档。\r\n'
+             '\r\n'
+             '任职要求：\r\n'
+             '1.本科及以上学历；计算机、软件、电子相关专业。\r\n'
+             '2.两年Python以上的使用经验，熟悉django框架或Flask相关框架。\r\n'
+             '3. 熟悉使用常用关系、非关系型数据库，如 Mysql,Redis，MongDB。\r\n'
+             '4.掌握Git日常版本工具。\r\n'
+             '【工作时间】7小时工作制\r\n'
+             '【晋升机会】只论能力不论年资，提供良好的成长路径，大神们带你快速升级\r\n'
+             '【专业培训】入职培训+公司内部培训+不定期内外部分享会\r\n'
+             '【生活福利】每日免费午晚餐、丰盛下午茶，免费零食饮料任君选择\r\n'
+             '【团队活动】周四下午活动日、每三月一次主题活动日，密逃、剧本杀、赛车、滑雪、温泉一轮接一轮\r\n'
+             '\r\n'
+             '\r\n'
+             '5.加分项：C++, Docker, Jenkins, k8s，系统优化等',
+ 'job_properties': ['重庆-渝北区', '1-3年', '本科'],
+ 'name': 'python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:12 [scrapy.core.scraper] ERROR: Error processing {'company': '泓信供应链',
+ 'job_desc': '岗位职责:\r\n'
+             '1、负责混合云智能监控的平台及服务建设，包括需求分析，功能实现、服务落地，日常维护等；\r\n'
+             '2、负责混合云AIOps平台的功能及服务建设，包括需求分析，功能实现、服务落地，日常维护等；\r\n'
+             '3、负责混合云CMDB的功能及服务建设，包括需求分析，功能实现、服务落地，日常维护等；\r\n'
+             '4、负责各异构平台/系统的对接，包括需求分析，功能实现、服务落地，日常维护等；\r\n'
+             '\r\n'
+             '任职要求:\r\n'
+             '1、熟练掌握Python开发技术，有三年以上Python开发经验；具有Python运维开发经验或数据分析经验者优先；\r\n'
+             '2、熟悉AIOps/监控/CMDB/DevOps中至少一种体系或原理，有相关项目实施落地经验者优先；\r\n'
+             '3、熟悉Linux操作系统，熟悉Linux下常用开源软件的安装配置，如Tomcat、Nginx、Redis、MySql等；\r\n'
+             '4、熟悉Bootstrap等WEB前端技术框架，掌握HTML、CSS、JS、JQuery等开发技术；\r\n'
+             '5、责任心强，具有良好的沟通技巧、学习能力和团队协作精神；',
+ 'job_properties': ['广州-天河区', '3-5年', '本科'],
+ 'name': '年薪25万python开发工程师（双休）'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:12 [scrapy.core.scraper] ERROR: Error processing {'company': '乾元云硕科技(深圳)有限公司',
+ 'job_desc': '职责描述：\n'
+             '1、分析业务流程中的去中⼼化业务场景，进⽽改造设计和实现智能合约 DApp； \n'
+             '2、负责对智能合约运⾏维护、演进升级等全栈技术⼯作； \n'
+             '3、跟进IPFS、FIL 、BSC、Matic、AVAX 等开源技术演进，并基于此构建、优化区块链智能 \n'
+             '合约； \n'
+             '4、参与智能合约 DApp 的整体架构设计和安全、性能、激励算法等优化改进⼯作。 \n'
+             '\n'
+             '任职要求：\n'
+             '1、本科（及以上）学历，计算机相关专业，较好英⽂读写能⼒； \n'
+             '2、5 年以上软件开发经验，2 年以上智能合约开发经验； \n'
+             '3、理解区块链实现原理，了解主流共识算法、地址⽣成、主流项⽬发展⽅向； \n'
+             '4、熟悉 EVM 运⾏机制，了解内联汇编、Bytecode、ABI 标准； \n'
+             '5、 掌握 Vyper/Solidity 智能合约开发语⾔，编码和注释风格良好，⾃编⾃测； \n'
+             '6、 掌握 Python/Node.JS 等语⾔，熟悉 Truffle 框架，能独⽴完成⽅案原理验证、合约⾃动 \n'
+             '化测试和辅助⼯具开发； \n'
+             '7、熟练使⽤ git，GitHub 活跃度较⾼，有开源项⽬ PR； \n'
+             '8、了解⼀个或多个主流 项⽬:DYDX、Compound、Pancake，Synthetix 等优先； \n'
+             '9、 职业规划明确，适应分布式办公和⼯作压⼒，沟通能⼒和团队协作能⼒良好。',
+ 'job_properties': ['深圳-宝安区', '5-10年', '统招本科'],
+ 'name': 'DAPP 开发工程师.'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:12 [scrapy.core.scraper] ERROR: Error processing {'company': '顺丰科技',
+ 'job_desc': '发布职位：\n'
+             '岗位职责:\n'
+             '1、保障现有运维系统的稳定运行，并提升系统可靠性和运维性\n'
+             '2、负责运维管理平台的开发和维护，提升运维质量及效率，实现系统的自动化管理\n'
+             '3、负责监控告警系统的开发和维护，做到监控可视化，故障自动化\n'
+             '4、评估系统性能和运行状态，建立量化指标，用数据指导优化\n'
+             '5、参与开发和维护部署脚本和运维系统平台，实现\n'
+             '自动化部署和自动化运维任职要求:\n'
+             '1、本科及以上学历，计算机相关专业，5年以上工作经验\n'
+             '2、熟悉Python语言及标准库，熟悉常用的第三方库\n'
+             '如requests，celery,paramiko等，具有Python\n'
+             '实际项目经验，熟练掌握Django、Flask、Tornado等任意web开发看框架\n'
+             '3、有运维自动化、监控系统、发布系统、运营支撑\n'
+             '系统等开发经验者优先;\n'
+             '4、熟悉mysql数据库，熟悉sql脚本编写\n'
+             '5、责任心强，积极主动，热爱学习，有较强的学习\n'
+             '能力，能快速掌握新知识并应用到工作中，具有良好\n'
+             '6、会go优先',
+ 'job_properties': ['深圳-南山区', '5-10年', '本科'],
+ 'name': 'python开发工程师'}
+Traceback (most recent call last):
+  File "E:\python\python36\lib\site-packages\twisted\internet\defer.py", line 662, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\python\python36\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\python\test\spiderpro\scrapy项目\liepin\job\job\pipelines.py", line 18, in process_item
+    self.liepin.insert(dict(item))
+  File "E:\python\python36\lib\site-packages\pymongo\collection.py", line 2587, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'insert' method on a 'Collection' object it is failing because no such method exists.
+2022-04-09 17:03:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-04-09 17:03:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 17775,
+ 'downloader/request_count': 23,
+ 'downloader/request_method_count/GET': 23,
+ 'downloader/response_bytes': 375468,
+ 'downloader/response_count': 23,
+ 'downloader/response_status_count/200': 23,
+ 'elapsed_time_seconds': 1.317149,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 4, 9, 9, 3, 12, 103475),
+ 'httpcompression/response_bytes': 3385830,
+ 'httpcompression/response_count': 23,
+ 'log_count/DEBUG': 23,
+ 'log_count/ERROR': 22,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 23,
+ 'scheduler/dequeued': 23,
+ 'scheduler/dequeued/memory': 23,
+ 'scheduler/enqueued': 23,
+ 'scheduler/enqueued/memory': 23,
+ 'start_time': datetime.datetime(2022, 4, 9, 9, 3, 10, 786326)}
+2022-04-09 17:03:12 [scrapy.core.engine] INFO: Spider closed (finished)
+
+进程已结束,退出代码0

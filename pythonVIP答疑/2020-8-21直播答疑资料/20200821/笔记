@@ -1,0 +1,58 @@
+1 . 程序的安装
+   安装 Python解释器
+   安装Pycharm
+2.如果安装第三方工具包（模块）
+   在线安装方式
+   pip install  xxxx
+   如果使用pip install xxxx安装失败的情况下
+   解决办法：pip install keras -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+   （其中的keras是你需要下载的，根据自己需求自行更改）
+
+   离线安装方式  :就是先把需要安装的库下载下来
+    下载的网址
+    阿里云 http://mirrors.aliyun.com/pypi/simple/
+    中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+    豆瓣(douban) http://pypi.douban.com/simple/
+    清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+    中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+
+    下载完成后安装方式 : 找到文件下载的路径  进入 pip install 文件的名称
+
+
+3.Python的基础语法
+  流程控制语法
+  a)顺序结构  :(程序从上到下一句不落的执行)
+  b)分支结构  :
+        单分支结构   if  条件表达式 :
+                          语句块
+        双分支结构   if...else
+                     if   条件表达式 :
+                            语句块1
+                     else:
+                            语句块2
+        多分支结构   if..elif ...elif ...else
+                     if  条件表达式1:
+                          语句块1
+                     elif  条件表达式2:
+                          语句块2
+                     else:
+                          语句块N
+
+  c)循环结构  循环结构中如果有else，else是在循环正常结束的时候才会执行
+            while ...else
+            for ...else
+
+
+  4.Python中的数据结构
+    a)列表-->可变序列
+    b)字典-->可变序列   :key要求是不可变序列 (int,str,元组...)
+    c)元组-->不可变序列
+    d)集合-->可变序列
+
+  5.Python中一切皆对象 (我对，象说七夕陪我一天好不好，象说，不行，动物园不放假)
+   一个对象由3部分组成 :id ,type ,value
+
+
+
+
+

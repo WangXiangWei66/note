@@ -1,0 +1,13 @@
+#替换字符串中的问号
+def fun(s):
+    res = list(s)
+    n = len(res)
+    for i in range(n):
+        if res[i] == '?':
+            for b in "abc":
+                if not (i > 0 and res[i - 1] == b or i < n - 1 and res[i + 1] == b):
+                    res[i] = b
+                    break
+    return ''.join(res)
+
+print(fun('?ds'))

@@ -1,0 +1,17 @@
+from selenium import webdriver
+import time
+#构造浏览器
+chrome=webdriver.Chrome()
+url='https://www.sciencedirect.com'
+chrome.get(url)
+chrome.find_element_by_name('pub').send_keys('remote sensing of environment')
+
+#点击搜索按钮
+chrome.find_elements_by_class_name().click()
+#源代码
+html=chrome.page_source
+print(html)
+time.sleep(20)
+
+#退出浏览器
+chrome.quit()

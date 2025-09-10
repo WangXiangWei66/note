@@ -1,0 +1,13 @@
+1.安装pyecharts
+  pip install pyecharts
+
+2. 安装地图
+  a)全球国家地图 (世界地图和213个国家，包括中国地图）
+    pip install echarts-countries-pypkg
+  b)中国省级地图 （23个省，5个自治区）
+    pip install echarts-china-provinces-pypkg
+  c)中国市级地图(370个中国城市)
+    pip install echarts-china-cities-pypkg
+
+中文帮助文档
+https://pyecharts.org/#/zh-cn/global_options

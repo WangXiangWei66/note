@@ -1,0 +1,14 @@
+python?单说Python指的是一种计算机语言，python语言
+python解释器？是一款应用程序，用于执行python语言所编写的代码，需要安装才能使用
+            python-3.8.5-amd64.exe
+anaconda?  加强版的Python解释器（需要安装才能使用），比单独安装的python解释器多N多第三方工具包，在使用时无需安装
+          Anaconda3-2020.02-Windows-x86_64.exe
+          安装坟anaconda自带的jupyter notebook
+pycharm?   编辑器，用于编写python代码工具， 这个Python代码编写完成，可以使用python解释器去执行，也可以使用
+           anaconda执行
+
+jupyter notebook?编辑器，用于编写python代码的工具，可以使用python解释器去执行，也可以使用
+           anaconda执行
+
+ 1.使用anaconda执行python代码，使用jupyter notebook编写爬虫代码
+

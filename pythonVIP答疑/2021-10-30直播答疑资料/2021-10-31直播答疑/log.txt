@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 24, in <module>
+    main() #调用main执行
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 11, in main
+    methodA()
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 14, in methodA
+    methodB()
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 17, in methodB
+    methodC()
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 20, in methodC
+    raise MyException('自定义异常信息')   # methodC触发了异常，这个异常传给了methodB,
+MyException: 自定义异常信息
+Traceback (most recent call last):
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 24, in <module>
+    main() #调用main执行
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 11, in main
+    methodA()
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 14, in methodA
+    methodB()
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 17, in methodB
+    methodC()
+  File "I:/pypro/2021-10-31直播答疑/demo4.py", line 20, in methodC
+    raise MyException('自定义异常信息')   # methodC触发了异常，这个异常传给了methodB,
+MyException: 自定义异常信息

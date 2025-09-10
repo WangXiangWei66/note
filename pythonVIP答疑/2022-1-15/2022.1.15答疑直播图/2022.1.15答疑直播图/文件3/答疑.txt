@@ -1,0 +1,11 @@
+一.见括号匹配.py
+
+1.为什么st可以匹配st1就不行
+2.char_dic为什么这样设置
+3.if not stack那一行（line 8）怎样理解
+4.pop操作是弹出lst的首元素还是为元素呢
+
+
+二.爬虫
+1.beautifulsoup 的find  findll   select方法的使用场景
+2.findall和select哪一个好一点

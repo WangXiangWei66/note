@@ -1,0 +1,31 @@
+def fun1(*a):
+    print(a)
+
+
+def fun2(**b):
+    print(b)
+
+
+tpe = (11, 22, 33, 44, 55)
+lst = [1, 2, 3, 4, 5, 6]
+dic = {'a': 100, 'b': 200, 'c': 300, 'd': 400}
+set1 = {31, 32, 33, 34, 35}
+
+print('*tpe', end=' ')
+fun1(*tpe)
+print('*lst', end=' ')
+fun1(*lst)
+
+print('*set1', end=' ')
+fun1(*set1)
+print('*dic', end=' ')
+fun1(*dic)
+
+print('**dic', end=' ')
+fun2(**dic)
+print('**tpe', end=' ')
+fun2(**tpe)
+print('**lst', end=' ')
+fun2(**lst)
+print('**set1', end=' ')
+fun2(**set1)

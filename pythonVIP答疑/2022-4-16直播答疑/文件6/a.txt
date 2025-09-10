@@ -1,0 +1,1 @@
+mongod --dbpath D:\BaiduNetdiskDownload\mongodb_v4.0.3\data\db

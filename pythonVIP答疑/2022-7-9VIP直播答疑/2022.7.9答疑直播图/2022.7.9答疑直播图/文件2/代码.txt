@@ -1,0 +1,21 @@
+import pytest
+import click
+import time
+import os
+def init_dir(now_time):
+
+    os.mkdir(os.getcwd()+'/test_report/'+now_time)
+@click.command()
+
+def run():
+    print('执行完成生成测试结果')
+    now_time=time.strftime('%Y_%m_%d_%H_%M_%S')
+    #创建目录
+    init_dir(now_time)
+#     构建html测试报告路径
+    html_report=os.getcwd()+'/test_report/'+now_time+'/result.html'
+    #编写运行
+    pytest.main(['-s','-v','./test_dir','--html='+html_report])
+if __name__ == '__main__':
+    # pytest.main(['-v','./test_dir']
+    run()

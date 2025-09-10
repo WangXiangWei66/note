@@ -1,0 +1,42 @@
+1.  list删除紧挨的重复元素
+
+def del_element():
+    lst=["薯条","方便面","牛奶","辣条","辣条","薯条","豆奶","辣条","辣条","面包","牛奶","海带丝" ]
+    # flag=True
+    index=0
+    s="辣条"
+    while s in lst:
+        for i in range(len(lst)):
+            if s==lst[i]:
+                index=i
+        lst.pop(index)
+    print(lst)
+
+
+if __name__ == '__main__':
+    del_element()
+
+这个做法有没有什么问题
+
+2.列表推导式
+
+def gen_list(lst):
+    ls=[]
+    ls1=[]
+    for i in range(len(lst)-3):
+        for index in range(3):
+            ls1.append(lst[i+index])
+        ls.append(ls1)
+        ls1=[]
+    print(ls)
+
+gen_list(list(range(1,101)))
+
+	1.将该方法改为推导式怎么写？
+	2.若将ls1=[]换成ls.clear() 则生成的lst每项都为空，为什么
+
+3.举例说明迭代和闭包的区别
+
+4.提取pdf公式到word
+
+5.见Word、
